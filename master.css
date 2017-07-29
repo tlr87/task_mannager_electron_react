@@ -1,0 +1,42 @@
+body{
+   background-color:#0b0f0e;
+   font-family: sans-serif;
+   margin: 0 auto;
+   padding: 50px;
+   text-align:center;
+   background-image:url(images/368070_screenshots_20170528211929_1.jpg);
+   background-repeat:no-repeat;
+   background-size: 800px 450px;
+   color:#FFF;
+}
+
+.container{
+	  width: 50%;
+  margin: 0 auto;
+}
+
+.Task{
+	text-indent:-99999px;
+  width: 50%;
+  margin: 0 auto;
+  border-style: solid;
+  height: 100px;
+  width: 100px;
+  padding: 45px;
+  background-image:url(images/Plus.png);
+  background-size:190px 190px;
+}
+
+
+
+
+
+.Task:Hover{
+	border-style: solid;
+	border-color:White;
+	height: 100px;
+	width: 100px;
+	padding: 45px;
+	background-image: url(images/Plus_dowm.png);
+	background-size: 190px 190px;
+}
