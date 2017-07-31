@@ -5,9 +5,7 @@ export default function (props){
   return(
     <div className='Home'>
         <h2>Please select a task or create a task!</h2>
-        <div className='Task'>
-          Create a task by clicking here. 
-        </div>
+        <Link to={`/Task`} className='Task'> Create a task by clicking here.</Link>
     </div>
   )
 }

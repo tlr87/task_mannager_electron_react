@@ -13,7 +13,7 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 450})
+  mainWindow = new BrowserWindow({width: 800, height: 500})
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -21,6 +21,7 @@ function createWindow () {
     protocol: 'file:',
     slashes: true
   }))
+  mainWindow.isResizable(false);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
