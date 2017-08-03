@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "webpack && electron .",
-    "build": "webpack",
+    "build": "webpack .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
     "test": "nodemon && webpack --watch",
     "watch": "webpack --watch"
   },
