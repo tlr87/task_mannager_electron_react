@@ -30,7 +30,7 @@ export default class AddTask extends React.Component {
         <input name="Project Name" placeholder="Project Name" type="text" onChange={(e) => this.updateNewCatDetails(e)}/>
         <input name="Priority" placeholder="Priority" type="text" onChange={(e) => this.updateNewCatDetails(e)}/>
         <input name="Deatails" placeholder="Deatails" type="text" onChange={(e) => this.updateNewCatDetails(e)}/>
-        <select name="Is Compleated" onChange={(e) => this.updateNewCatDetails(e)}>
+        <select name="Compleated" onChange={(e) => this.updateNewCatDetails(e)}>
           <option selected disabled>Is Compleated?</option>
           <option value={true}>Yes</option>
           <option value={false}>No</option>
