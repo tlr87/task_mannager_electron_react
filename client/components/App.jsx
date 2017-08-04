@@ -38,7 +38,7 @@ class App extends React.Component {
             <Route exact path='/Task' component={Task}/>
             <Route exact path='/Help' component={Help}/>
             <Route exact path='/About' component={About}/>
-            <Route exact path='/View/:id'render={(props)=> <View task={this.state.tasks.find(task => props.match.params.id == task.id)}/>}/>
+            <Route exact path='/View/:id'render={(props)=> <View task={this.state.tasks.find(task => props.match.params.id == task.id)} history={props.history}/>}/>
           </div>
         </Router>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import request from 'superagent'
 
 
 export default class AddTask extends React.Component {
@@ -19,11 +20,12 @@ export default class AddTask extends React.Component {
   }
   submit(e) {
     e.preventDefault()
+    console.log(this.state.newTask);
     request
       .post('http://localhost:3000/v1/tasks/')
       .send(this.state.newTask)
       .end((err, res) => {
-        console.log(res.status);
+        console.log(err, res);
     })
   }
   render() {
@@ -31,7 +33,7 @@ export default class AddTask extends React.Component {
       <div className="New-Task Component">
     <h2> Make a New task </h2>
       <form onSubmit={this.submit}>
-        <input name="Project Name" placeholder="Project Name" type="text" onChange={(e) => this.updateNewDetails(e)}/>
+        <input name="Project_Name" placeholder="Project Name" type="text" onChange={(e) => this.updateNewDetails(e)}/>
         <input name="Task" placeholder="Task" type="text" onChange={(e) => this.updateNewDetails(e)}/>
         <input name="Priority" placeholder="Priority" type="text" onChange={(e) => this.updateNewDetails(e)}/>
         <select name="Colour" onChange={(e) => this.updateNewDetails(e)}>
