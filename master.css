@@ -17,6 +17,16 @@ a:hover {
 .container {
 }
 
+.Home ul {
+    list-style-type: none;
+}
+.Home li{
+    float: left;
+    margin:10px;
+    color:White;
+
+}
+
 .Component {
   padding: 2%;
 }
