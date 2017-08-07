@@ -12,6 +12,14 @@ router.get('/', function (req, res) {
 })
 
 
+router.get('/:id', function (req, res) {
+  knex('tasks').where('id', req.params.id).first()
+    .then(function (task) {
+      res.send(task)
+    })
+})
+
+
 router.post('/', function(req, res) {
     var body = req.body
     console.log(body);
@@ -32,7 +40,11 @@ router.delete('/:id', function (req, res) {
   .where('id', id)
   .del()
   .then(function (tasksDel) {
-    res.status(204).send(tasksDel)
+    res.sendStatus(204)
+  })
+  .catch((err) => {
+    console.log(err)
+    res.status(500)
   })
 })
 
