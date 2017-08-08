@@ -13,8 +13,7 @@
     "rebuild": "electron-rebuild -f -w sqlite3",
     "test": "nodemon  && webpack --watch",
     "watch": "webpack --watch",
-    "knex": "knex",
-    "postinstall": "webpack"
+    "knex": "knex"
   },
   "babel": {
     "presets": [
