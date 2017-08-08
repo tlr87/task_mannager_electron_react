@@ -1,7 +1,7 @@
 var express = require('express')
 var router = express.Router()
 
-var config = require('../knexfile').[process.env.NODE_ENV || 'development']
+var config = require('../knexfile')[process.env.NODE_ENV || 'development']
 var knex = require('knex')(config)
 
 router.get('/', function (req, res) {
