@@ -20,7 +20,7 @@ export default class Home extends React.Component {
   }
 
   refreshTasks() {
-    request.get('http://localhost:3000/v1/tasks')
+    request.get('/v1/tasks')
       .end((err, res) => {
         this.setState({
           tasks: res.body

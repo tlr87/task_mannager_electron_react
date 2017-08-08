@@ -23,7 +23,7 @@ export default class AddTask extends React.Component {
     e.preventDefault()
     console.log(this.state.newTask);
     request
-      .post('http://localhost:3000/v1/tasks/')
+      .post('/v1/tasks/')
       .send(this.state.newTask)
       .end((err, res) => {
         console.log(err, res);

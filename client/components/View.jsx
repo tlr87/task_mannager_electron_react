@@ -21,7 +21,7 @@ export default class View extends React.Component {
   }
 
   refreshTask() {
-    request.get('http://localhost:3000/v1/tasks/' + this.props.match.params.id)
+    request.get('/v1/tasks/' + this.props.match.params.id)
       .end((err, res) => {
         this.setState({
           task: res.body
@@ -34,7 +34,7 @@ export default class View extends React.Component {
     console.log(this.props)
     console.log('delete' + this.state.task.id)
     request
-      .delete('http://localhost:3000/v1/tasks/' + this.state.task.id)
+      .delete('/v1/tasks/' + this.state.task.id)
       .end((err, res) => {
         console.log('test')
         this.props.history.push('/')
