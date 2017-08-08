@@ -14,6 +14,7 @@
     "test": "nodemon  && webpack --watch",
     "watch": "webpack --watch",
     "knex": "knex",
+    "postinstall":"webpack",
     "h:migrate": "heroku run knex migrate:latest",
     "h:rollback": "heroku run knex migrate:rollback",
     "h:seed": "heroku run knex seed:run"
