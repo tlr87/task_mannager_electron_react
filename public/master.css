@@ -1,23 +1,18 @@
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : portrait) { 
-	body {
-	background-image: url(images/StarSkyI6.jpg)!important;
-	background-size: 106%;
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  body {
+    background-image: url(images/StarSkyI6.jpg)!important;
+    background-size: 106%;
     background-repeat: no-repeat;
-	} 
-	
-	.Home li {
-    padding: 3%;!important;
-	}
-
-	h2 {
-	color: White;
-	padding: 0 3px 0 24px!important;
-	}
+  }
+  .Home li {
+    padding: 3%;
+    !important;
+  }
+  h2 {
+    color: White;
+    padding: 0 3px 0 24px!important;
+  }
 }
-
 
 body {
   font-family: sans-serif;
@@ -75,7 +70,7 @@ a:hover {
 
 input[type="text"] {
   font-size: 18px;
-    margin: 10px;
+  margin: 10px;
 }
 
 select {
@@ -84,8 +79,8 @@ select {
 }
 
 input[type="submit"] {
-    margin-top: 5px;
-    margin-left: 9px;
+  margin-top: 5px;
+  margin-left: 9px;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -100,13 +95,13 @@ input[type="submit"] {
 }
 
 .Nav {
-	overflow: hidden;
-	background-color: rgba(78, 78, 78, 0.35);
-	top: 0;
-	width: 100%;
-	border-style: dashed;
-	border-width: 0 0 1px 0;
-	border-color: #FFF;
+  overflow: hidden;
+  background-color: rgba(78, 78, 78, 0.35);
+  top: 0;
+  width: 100%;
+  border-style: dashed;
+  border-width: 0 0 1px 0;
+  border-color: #FFF;
 }
 
 .Nav li {
@@ -162,7 +157,7 @@ input[type="submit"] {
 }
 
 .Nav li:hover:last-child {
-  background-color:transparent;
+  background-color: transparent;
   cursor: default;
 }
 
@@ -175,23 +170,21 @@ input[type="submit"] {
   background-color: black;
 }
 
-.Task{
+.Task {
   height: 98px;
   width: 98px;
   border-style: dashed;
   border-width: thin;
   border-color: white;
   background-color: Black;
-
 }
 
-
 .Home-Task p {
-  background-color:rgba(78, 78, 78, 0.35);
+  background-color: rgba(78, 78, 78, 0.35);
   border-style: solid;
   border-width: thin;
   padding: 2px;
-  border-color:Black;
+  border-color: Black;
 }
 
 .View ul {
