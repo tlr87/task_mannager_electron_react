@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import request from 'superagent'
+import { browserHistory } from 'react-router'
 
 
 export default class AddTask extends React.Component {
@@ -26,6 +27,7 @@ export default class AddTask extends React.Component {
       .send(this.state.newTask)
       .end((err, res) => {
         console.log(err, res);
+        this.props.history.push('/')
     })
   }
   render() {
@@ -42,6 +44,10 @@ export default class AddTask extends React.Component {
             <option value={"yellow"}>Yellow</option>
             <option value={"green"}>Green</option>
             <option value={"red"}>Red</option>
+            <option value={"deepskyblue"}>Deep Sky Blue</option>
+            <option value={"orangered"}>Orange</option>
+            <option value={"lime"}>Lime</option>
+            <option value={"salmon"}>Salmon</option>
         </select>
         <input name="Details" placeholder="Details" type="text" onChange={(e) => this.updateNewDetails(e)}/>
         <select name="Compleated" onChange={(e) => this.updateNewDetails(e)}>

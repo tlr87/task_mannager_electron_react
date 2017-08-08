@@ -11,7 +11,7 @@ export default function (props){
     <div className='Help Component'>
         <h2>Help section</h2>
           <p>
-            Phasellus sed lacus sit amet tortor maximus pulvinar vel a libero. Ut sollicitudin libero euismod sagittis iaculis. Proin mauris risus, vestibulum eu aliquet a, luctus vel risus. Aliquam fringilla ipsum id sapien consequat, non faucibus nibh euismod. Proin dui lectus, rutrum a posuere sodales, tempor id lorem.
+            Click on a task in the color boxes. Or create a task!
           </p>
     </div>
   )

@@ -38,12 +38,6 @@ export default class View extends React.Component {
       .end((err, res) => {
         console.log('test')
         this.props.history.push('/')
-        // <Redirect from="/View/:id" to="/" />
-        // browserHistory.push('/')
-        // this.props.history.go(-1)
-        // window.location.href= '/';
-        // browserHistory.goBack()
-
     })
     //superagent stuff here
   }
@@ -53,31 +47,31 @@ export default class View extends React.Component {
     return(
       <div className='View Component'>
         <h2>View your task!</h2>
-
         <ul>
           <li>
-            {task.id}
+            <span className="view-title">Task id:</span> {task.id}
           </li>
           <li>
-            {task.Project_Name}
+            <span className="view-title">Project Name:</span> {task.Project_Name}
           </li>
           <li>
-            {task.Task}
+            <span className="view-title">Task:</span> {task.Task}
           </li>
           <li>
-            {task.Priority}
+            <span className="view-title">Priority:</span> {task.Priority}
           </li>
           <li>
-            {task.Details}
+            <span className="view-title">Details:</span> {task.Details}
           </li>
           <li>
-            {task.Compleated}
+            <span className="view-title">Compleated:</span> {task.Compleated}
           </li>
-        </ul>
-
+          <li>
+          <a className='Button' onClick={this.deleteTask.bind(this)} >Delete Task.</a>
+          </li>
+      </ul>
         <p>
 
-          <a onClick={this.deleteTask.bind(this)} >Delete button!</a>
         </p>
       </div>
     )

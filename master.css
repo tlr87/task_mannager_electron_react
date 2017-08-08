@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: #53544e;
+  background-color: black;
+  background-image: url(images/StarSky.jpg);
 }
 
 a {
@@ -10,30 +11,76 @@ a {
   display: block;
 }
 
-a:hover {
-  color: Black;
+h2 {
+  color: White;
 }
 
-.container {
+ul {
+  padding: 0;
+  margin: 0;
 }
+
+a:hover {
+  color: #565656;
+}
+
+.container {}
 
 .Home ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-.Home li{
-    float: left;
-    margin:10px;
-    color:White;
 
+.Home li {
+  float: left;
+  margin: 10px;
+  color: White;
 }
 
 .Component {
   padding: 2%;
 }
 
+.New-Task {
+  width: 350px;
+  border-style: solid;
+  padding: 15px;
+  background-size: 190px 190px;
+  display: block;
+  margin: 4%;
+  border-style: solid;
+  border-color: white;
+  width: 310px;
+  background-color: Black;
+}
+
+input[type="text"] {
+  font-size: 18px;
+    margin: 10px;
+}
+
+select {
+  font-size: 18px;
+  margin: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 50px;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Black;
+  cursor: pointer;
+  background-color: #333;
+}
+
 .Nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(78, 78, 78, 0.35);
   top: 0;
   width: 100%;
 }
@@ -46,10 +93,33 @@ a:hover {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 94%;
+  border-style: solid;
+  border-width: thin;
+  border-color: Black;
+  cursor: pointer;
+}
+
+.Button {
+  margin: 0;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   font-size: 17px;
   border-style: solid;
   border-width: 1px;
   border-color: Black;
+  cursor: pointer;
+  background-color: #333;
+}
+
+.Button:hover {
+  float: left;
+  display: block;
+  background-color: #666666;
   cursor: pointer;
 }
 
@@ -71,13 +141,49 @@ a:hover {
   cursor: default;
 }
 
-
-
-.Home-Task{
-  border-style: solid;
+.Home-Task {
   height: 100px;
   width: 100px;
   padding: 15px;
   background-size: 190px 190px;
   display: block;
+  background-color: black;
+}
+
+.Task{
+  height: 98px;
+  width: 98px;
+  border-style: dashed;
+  border-width: thin;
+  border-color: white;
+  background-color: Black;
+
+}
+
+
+.Home-Task p {
+  background-color:rgba(78, 78, 78, 0.35);
+  border-style: solid;
+  border-width: thin;
+  padding: 2px;
+  border-color:Black;
+}
+
+.View ul {
+  border-style: solid;
+  border-color: white;
+  width: 350px;
+  height: 370px;
+  background-color: Black;
+}
+
+.View li {
+  padding: 15px;
+  background-size: 190px 190px;
+  display: block;
+  color: White;
+}
+
+.view-title {
+  font-weight: bold;
 }

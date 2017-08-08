@@ -10,7 +10,7 @@ export default function(props) {
     <div className='About Component'>
       <h2>Welcome to Toms task manager!</h2>
       <p>
-        Phasellus sed lacus sit amet tortor maximus pulvinar vel a libero. Ut sollicitudin libero euismod sagittis iaculis. Proin mauris risus, vestibulum eu aliquet a, luctus vel risus. Aliquam fringilla ipsum id sapien consequat, non faucibus nibh euismod. Proin dui lectus, rutrum a posuere sodales, tempor id lorem.
+        This is a proof of concept!
       </p>
     </div>
   )
