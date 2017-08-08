@@ -1,10 +1,11 @@
 {
-  "name": "electron-quick-start",
+  "name": "Toms finicky task manager!",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A finicky task manager!",
   "main": "main.js",
   "scripts": {
-    "start": "concurrently \"nodemon server\" \"webpack-dev-server\" \"electron .\"",
+    "start": "node server/index",
+    "start-el": "concurrently \"nodemon server\" \"webpack-dev-server\" \"electron .\"",
     "dev": "concurrently \"nodemon server\" \"webpack-dev-server\"",
     "server": "nodemon server",
     "client": "webpack-dev-server",
@@ -13,7 +14,7 @@
     "test": "nodemon  && webpack --watch",
     "watch": "webpack --watch",
     "knex": "knex",
-    "postinstall": "install-app-deps"
+    "postinstall": "webpack"
   },
   "babel": {
     "presets": [
@@ -69,6 +70,9 @@
     "babel-preset-stage-3": "^6.24.1",
     "babel-register": "^6.18.0",
     "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "knex": "^0.11.10",
+    "webpack": "^2.3.3",
     "cors": "^2.8.4",
     "electron-rebuild": "^1.6.0",
     "express": "^4.15.3",
