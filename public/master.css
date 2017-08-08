@@ -4,7 +4,7 @@ and (max-device-width : 667px)
 and (orientation : portrait) { 
 	body {
 	background-image: url(images/StarSkyI6.jpg)!important;
-	background-size: 374px;
+	background-size: 106%;
     background-repeat: no-repeat;
 	} 
 	
