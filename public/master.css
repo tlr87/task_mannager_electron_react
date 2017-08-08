@@ -3,7 +3,9 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) 
 and (orientation : portrait) { 
 	body {
-	background-image: url(images/StarSkyI6.jpg);
+	background-image: url(images/StarSkyI6.jpg)!important;
+	background-size: 374px;
+    background-repeat: no-repeat;
 	} 
 }
 
